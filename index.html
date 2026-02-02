@@ -43,20 +43,20 @@
             </div> -->
             <div>
                 <div class="container mx-auto">
-                    <div class="bg-gray-200 rounded-lg p-5 overflow-hidden relative">
+                    <div class="bg-gray-200 rounded-lg px-5 overflow-hidden relative">
                          <video class="absolute top-0 left-0 w-full h-full object-cover z-10" autoplay loop muted playsinline>
                             <source src="src/img/bg.mp4" type="video/mp4" />
                         </video>
-                        <div class="grid grid-cols-5 z-20 relative">
+                        <div class="grid grid-cols-5 z-20 relative px-10 ">
                             <div class="col-span-2">
                                 <div class="text-white py-10">
-                                    <p>Lucknow Weather Conditions</p>
-                                    <p>Current Temperature Level</p>
+                                    <p class="text-3xl">Lucknow Weather Conditions</p>
+                                    <p class="text-xl">Current Temperature Level</p>
                                 </div>
                                 <div class="flex space-x-32">
                                     <div class="space-y-6">
                                         <div class="text-white">
-                                            <p class="text-4xl">12<sup>°C</sup></p>
+                                            <p class="text-5xl">12<sup class="text-2xl"> °C</sup></p>
                                         </div>
                                         <div>
                                             <button class="bg-blue-400 px-10 py-2 rounded-xl text-white">Cool</button>
@@ -65,15 +65,15 @@
                                     <div class="space-y-1">
                                         <div class="flex items-center">
                                             <img class="w-10" src="https://www.aqi.in/media/weather-icons/fog.svg" alt="">
-                                            <p class="text-white">Fog</p>
+                                            <p class="text-white text-xl">Fog</p>
                                         </div>
                                         <div class="text-sm text-white">
-                                            <p class="pb-1">Feels Like  12°C</p>
-                                            <p>Humidity  100%</p>
+                                            <p class="pb-1">Feels Like <span class="font-semibold">  12°C</span></p>
+                                            <p>Humidity <span class="font-semibold"> 100%</span></p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="py-10 text-gray-400">
+                                <div class="py-10 text-white">
                                     <p>Last Updated: 2026-01-31 23:45 (Local Time)</p>
                                 </div>
                             </div>
@@ -82,22 +82,25 @@
                                     <img class="w-24" src="https://www.aqi.in/media/sensor-ranges/temperature-cool-level.webp" alt="">
                                 </div>
                             </div>
-                            <div class="col-span-2">
-                                <div class="bg-[#8F6963] p-5 cursor-pointer">
-                                    <div>
-                                        <p class="text-gray-400">Air Quality Index</p>
+                            <div class="col-span-2 flex justify-end items-center ">
+                                <div class="cursor-pointer rounded-2xl border border-gray-100 w-sm" style="background: rgba(233, 84, 119, 0.5);">
+                                    <div class="p-5 ">
+                                        <p class="text-gray-200 font-medium text-sm">Air Quality Index</p>
                                     </div>
-                                    <div>
-                                    </div>
-                                    <div class="flex space-x-10 p-3">
+                                    <hr class="border-[0.5px] border-[#e954772e]">
+                                    <div class=" flex justify-between space-x-10 px-12 py-4">
                                         <div class="text-white items-center">
-                                            328<sub>AQI</sub>
+                                            <p class="text-2xl">328 <sub class="text-base"> AQI</sub></p>
                                         </div>
                                         <div>
-                                            <p class="text-gray-400">PM 2.5 <span class="text-white">:  234</span></p>
-                                            <p class="text-gray-400">PM 10 <span class="text-white">:  300</span></p>
+                                            <p class="text-gray-200">PM 2.5 <span class="text-white">:  234</span></p>
+                                            <p class="text-gray-200">PM 10 <span class="text-white">:  300</span></p>
                                         </div>
                                     </div>                                 
+                                    <div class="px-8 pb-4">
+                                        <hr class="border-[0.5px] border-[#e954772e]">
+                                        <p class="text-gray-200">Air quality index is: <span class="text-white"> UNHEALTHY</span></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
