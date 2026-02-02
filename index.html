@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="src/css/output.css">
     <title>WhetherWebsite</title>
 </head>
-<body>
+<body class="h-screen bg-[#0E1923]">
     <header class="bg-[#22272C]">
-        <div class="container mx-auto px-5 py-2 flex space-x-16">
+        <div class="container mx-auto px-28 py-2 flex space-x-16">
             <div class="w-24 bg-cover p-2">
                 <img src="https://www.aqi.in/media/misc/aqi-logo.svg" alt="">
             </div>
@@ -23,6 +23,7 @@
                         <svg class="w-4 h-4 text-body" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/></svg>
                         </div>
                         <input type="search" id="search" class="block w-full px-56 py-3 ps-9 bg-neutral-secondary-medium border-2 border-sky-600 rounded-full text-heading text-sm rounded-base focus:ring-brand focus:border-brand shadow-xs placeholder:text-body" placeholder="Search any Location,City,State or Country" required />
+                    </div>
             </div>
         </div>
     </header>
@@ -42,57 +43,62 @@
             </div> -->
             <div>
                 <div class="container mx-auto">
-                    <div class="grid grid-cols-5">
-                        <div class="col-span-2">
-                            <div class="text-white py-10">
-                                <p>Lucknow Weather Conditions</p>
-                                <p>Current Temperature Level</p>
+                    <div class="bg-gray-200 rounded-lg p-5 overflow-hidden relative">
+                         <video class="absolute top-0 left-0 w-full h-full object-cover z-10" autoplay loop muted playsinline>
+                            <source src="src/img/bg.mp4" type="video/mp4" />
+                        </video>
+                        <div class="grid grid-cols-5 z-20 relative">
+                            <div class="col-span-2">
+                                <div class="text-white py-10">
+                                    <p>Lucknow Weather Conditions</p>
+                                    <p>Current Temperature Level</p>
+                                </div>
+                                <div class="flex space-x-32">
+                                    <div class="space-y-6">
+                                        <div class="text-white">
+                                            <p class="text-4xl">12<sup>°C</sup></p>
+                                        </div>
+                                        <div>
+                                            <button class="bg-blue-400 px-10 py-2 rounded-xl text-white">Cool</button>
+                                        </div>
+                                    </div>
+                                    <div class="space-y-1">
+                                        <div class="flex items-center">
+                                            <img class="w-10" src="https://www.aqi.in/media/weather-icons/fog.svg" alt="">
+                                            <p class="text-white">Fog</p>
+                                        </div>
+                                        <div class="text-sm text-white">
+                                            <p class="pb-1">Feels Like  12°C</p>
+                                            <p>Humidity  100%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="py-10 text-gray-400">
+                                    <p>Last Updated: 2026-01-31 23:45 (Local Time)</p>
+                                </div>
                             </div>
-                            <div class="flex space-x-32">
-                                <div class="space-y-6">
-                                    <div class="text-white">
-                                        <p class="text-4xl">12<sup>°C</sup></p>
+                            <div class="col-span-1 flex items-end">
+                                <div>
+                                    <img class="w-24" src="https://www.aqi.in/media/sensor-ranges/temperature-cool-level.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="col-span-2">
+                                <div class="bg-[#8F6963] p-5 cursor-pointer">
+                                    <div>
+                                        <p class="text-gray-400">Air Quality Index</p>
                                     </div>
                                     <div>
-                                        <button class="bg-blue-400 px-10 py-2 rounded-xl text-white">Cool</button>
                                     </div>
+                                    <div class="flex space-x-10 p-3">
+                                        <div class="text-white items-center">
+                                            328<sub>AQI</sub>
+                                        </div>
+                                        <div>
+                                            <p class="text-gray-400">PM 2.5 <span class="text-white">:  234</span></p>
+                                            <p class="text-gray-400">PM 10 <span class="text-white">:  300</span></p>
+                                        </div>
+                                    </div>                                 
                                 </div>
-                                <div class="space-y-1">
-                                    <div class="flex items-center">
-                                        <img class="w-10" src="https://www.aqi.in/media/weather-icons/fog.svg" alt="">
-                                        <p class="text-white">Fog</p>
-                                    </div>
-                                    <div class="text-sm text-white">
-                                        <p class="pb-1">Feels Like  12°C</p>
-                                        <p>Humidity  100%</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="py-10 text-gray-400">
-                                <p>Last Updated: 2026-01-31 23:45 (Local Time)</p>
-                            </div>
-                        </div>
-                        <div class="col-span-1 flex items-end">
-                            <div>
-                                <img class="w-24" src="https://www.aqi.in/media/sensor-ranges/temperature-cool-level.webp" alt="">
-                            </div>
-                        </div>
-                        <div class="col-span-2">
-                            <div class="bg-[#8F6963] p-5 cursor-pointer">
-                                <div>
-                                    <p class="text-gray-400">Air Quality Index</p>
-                                </div>
-                                <div>
-                                </div>
-                                <div class="flex space-x-10 p-3">
-                                    <div class="text-white items-center">
-                                        328<sub>AQI</sub>
-                                    </div>
-                                    <div>
-                                        <p class="text-gray-400">PM 2.5 <span class="text-white">:  234</span></p>
-                                        <p class="text-gray-400">PM 10 <span class="text-white">:  300</span></p>
-                                    </div>
-                                </div>                                 
                             </div>
                         </div>
                     </div>
